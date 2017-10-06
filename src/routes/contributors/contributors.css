@@ -1,0 +1,175 @@
+.contributors-page header {
+  height: 0px;
+}
+
+.contributors-page .head-title {
+  opacity: 0;
+  transform: translate3d(0,-250px,0);
+}
+
+.contributors-page .contributors-link {
+  color: rgba(255,255,255,1);
+  border-bottom: 4px solid white;
+  padding: 10px 5px 6px 5px;
+}
+
+.contributors-page footer {
+  position: absolute;
+}
+
+#contributors {
+  display: inline-block;
+  max-width: 900px;
+  padding: 0px 0 100px 0;
+  position: relative;
+  width: 90%;
+}
+
+.contributors-title {
+  font: 40px "Lato";
+  padding: 26px;
+  text-align: center;
+}
+
+.member {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 0;
+  height: 100px;
+  padding: 8px;
+  position: absolute;
+  text-align: left;
+  transition: .2s all;
+  width: 49%;
+}
+
+.member::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,.25);
+  transition: opacity .2s ease-in-out;
+}
+
+.member:hover::after {
+  opacity: 1;
+}
+
+.member-open::after {
+  opacity: .7;
+}
+
+.member-image {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgb(200,200,200);
+  border-radius: 100%;
+  display: inline-block;
+  height: 84px;
+  width: 84px;
+  transition: .2s all;
+}
+
+.member-info {
+  font: 16px "Segoe UI";
+  position: absolute;
+  left: 105px;
+  top: 29px;
+  transition: .2s all;
+}
+
+.member-position, .member-location {
+  transition: .2s all;
+  opacity: 0;
+}
+
+/* First Column */
+.member-1, .member-3, .member-5, .member-7 {left: 0;}
+/* Second Column */
+.member-2, .member-4, .member-6, .member-8 {left: 51%;}
+/* First Row */
+.member-1, .member-2 {top: 100px;}
+/* Second Row */
+.member-3, .member-4 {top: 215px;}
+/* Third Row */
+.member-5, .member-6 {top: 330px;}
+/* Fourth Row */
+.member-7, .member-8 {top: 445px;}
+
+.member-1, .member-4, .member-5, .member-8 {
+  border: 1px solid rgba(252, 165, 241,.5);
+}
+
+.member-2, .member-3, .member-6, .member-7 {
+  border: 1px solid rgba(181, 255, 255,.5);
+}
+
+.open-member .member {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.member-open {
+  top: 100px;
+  left: 0;
+  width: 100%;
+}
+
+.open-member .member-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.member-open .member-position, .member-open .member-location, .member-open .member-contact {
+  opacity: 1;
+}
+
+.member-open .member-info {
+  top: 8px;
+  left: 115px;
+}
+
+.member-open .member-image {
+  top: 0px;
+  left: 0px;
+  border-radius: 5px;
+  height: 100px;
+  width: 100px;
+}
+
+.member-contact {
+  font: 16px "Segoe UI";
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  opacity: 0;
+  text-align: right;
+  transition: .2s all;
+}
+
+.member-bio {
+  font: 16px "Segoe UI";
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  opacity: 0;
+  height: 0px;
+  padding: 0px 16px;
+  transition: .2s all;
+  overflow: hidden;
+}
+
+.member-open .member-bio {
+  height: 400px;
+  opacity: 1;
+}

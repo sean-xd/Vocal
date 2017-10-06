@@ -1,0 +1,52 @@
+.products-page header {
+  height: 0px;
+}
+
+.products-page .head-title {
+  opacity: 0;
+  transform: translate3d(0,-250px,0);
+}
+
+.products-page .products-link {
+  color: rgba(255,255,255,1);
+  border-bottom: 4px solid white;
+  padding: 10px 5px 6px 5px;
+}
+
+.products-page footer {
+  position: absolute;
+}
+
+#products {
+  display: inline-block;
+  height: 100%;
+  max-width: 900px;
+  padding: 20px 0 60px 0;
+  text-align: left;
+  width: 80%;
+}
+
+.products-title {
+  font: 40px "Lato";
+  padding: 15px;
+  text-align: center;
+}
+
+.opener {
+  font: 20px "Segoe UI";
+  padding: 10px 5px 25px 5px;
+}
+
+.list-title {
+  font: 900 22px "Lato";
+  padding: 10px;
+}
+
+#products ul {
+  margin: 0 0 25px 0;
+}
+
+#products li {
+  font: 18px "Segoe UI";
+  padding: 2px;
+}

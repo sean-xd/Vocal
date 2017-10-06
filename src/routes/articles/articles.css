@@ -1,0 +1,136 @@
+.articles-page header {
+  height: 0px;
+}
+
+.articles-page .head-title {
+  opacity: 0;
+  transform: translate3d(0,-250px,0);
+}
+
+.articles-page footer {
+  position: absolute;
+}
+
+article {
+  font-size: 0;
+  max-width: 900px;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  padding: 40px 0px;
+}
+
+.articles-page article {
+  margin-bottom: 30px;
+  padding: 40px 0px 30px 0px;
+}
+
+.articles-page main {
+  min-height: calc(100% - 46px);
+}
+
+article:nth-child(even){
+  border-bottom: 2px solid rgba(134, 189, 189,.5);
+}
+
+article:nth-child(even) .article-authors img {
+  border: 2px solid rgba(134, 189, 189,.5);
+}
+
+article:nth-child(odd){
+  border-bottom: 2px solid rgba(176, 116, 168,.5);
+}
+
+article:nth-child(odd) .article-authors img {
+  border: 2px solid rgba(176, 116, 168,.5);
+}
+
+.article-authors {
+  display: inline-block;
+  width: 84px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.article-authors img {
+  border-radius: 100%;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.article-text {
+  display: inline-block;
+  width: calc(100% - 94px);
+}
+
+.article-date {
+  color: rgba(20,20,20,.6);
+  font: 16px "Raleway";
+  padding: 5px;
+}
+
+.article-title {
+  display: inline-block;
+  color: rgba(20,20,20,.8);
+  font: 26px "Raleway";
+  padding: 5px;
+  transition: .2s all;
+  text-decoration: none;
+}
+
+.articles-page .article-title {
+  color: rgb(20,20,20);
+}
+
+.article-title:hover {
+  color: rgba(20,20,20,1);
+}
+
+.article-blurb {
+  color: rgb(20,20,20);
+  font: 18px "Didact Gothic";
+  padding: 5px 5px 15px 5px;
+}
+
+.article-para {
+  color: rgb(20,20,20);
+  font: 18px "Didact Gothic";
+  padding: 5px;
+}
+
+.article-para:last-child {
+  padding: 5px 5px 15px 5px;
+}
+
+.article-tag, .article-authors img  {cursor: pointer;}
+
+.article-tag {
+  color: rgba(20,20,20,.8);
+  border-radius: 2px;
+  border: 1px solid rgba(20,20,20,.5);
+  display: inline-block;
+  padding: 5px 10px;
+  font: 16px "Didact Gothic";
+  margin: 5px;
+  transition: .2s all;
+}
+
+.article-tag:hover {
+  border: 1px solid rgba(20,20,20,1);
+  color: rgb(20,20,20,1);
+}
+
+.disclaimer {
+  padding-left: 94px;
+  text-align: left;
+  font: 14px "Raleway";
+  width: 80%;
+  margin: 0px auto 86px auto;
+  max-width: 800px;
+}
+
+.disc-text, .disclaimer a {
+  padding: 5px;
+}

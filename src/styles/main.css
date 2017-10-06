@@ -1,0 +1,167 @@
+/* RESET */
+html, body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+
+/* CLASSES */
+.fill {
+  height: 100%;
+  width: 100%;
+}
+
+/* HEADER */
+header {
+  background: white url("../images/skyline2.jpg") center/cover;
+  height: 270px;
+  position: relative;
+  text-align: center;
+  transition: .2s all;
+  width: 100%;
+}
+
+/*.head-gradient {
+  box-shadow: inset 0 0px 25px black;
+  background: linear-gradient(to top right, #FCA5F1, #B5FFFF);
+  position: absolute;
+  top: 0;
+  opacity: .65;
+  transition: .2s all;
+}*/
+
+.head-title {
+  display: inline-block;
+  color: white;
+  font: 500 70px "Montserrat";
+  padding: 20px;
+  top: 200px;
+  left: calc(50% - 424px);
+  position: absolute;
+  text-shadow: 1px 1px black, 1px -1px black, -1px 1px black, -1px -1px black;
+  transition: .2s all;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.font-loaded .head-title {
+  opacity: 1;
+  transform: translate3d(0, -40px, 0);
+}
+
+/* NAVIGATION */
+nav {
+  font-size: 0;
+  position: relative;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background: rgb(40, 40, 40);
+}
+
+.grade-2 {
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(40,40,40,1));
+}
+
+nav a {
+  border-bottom: 0px solid white;
+  color: white;
+  display: inline-block;
+  font: 20px "Segoe UI";
+  padding: 10px 5px;
+  margin: 2px 10px 0px 10px;
+  text-decoration: none;
+  text-shadow: 1px 1px rgba(20,20,20,.6), 1px -1px rgba(20,20,20,.6), -1px 1px rgba(20,20,20,.6), -1px -1px rgba(20,20,20,.6);
+  transition: .2s all;
+}
+
+nav a:hover {
+  border-bottom: 4px solid rgba(255,255,255,.8);
+  padding: 10px 5px 6px 5px;
+}
+
+nav a:last-child {
+  margin-right: 20px;
+}
+
+/* MAIN */
+main {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: rgb(20,20,20);
+  bottom: 0;
+  height: 46px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.foot-note {
+  color: rgb(200,200,200);
+  display: inline-block;
+  font: 14px "Raleway";
+  padding: 16px 10px 10px 10px;
+  vertical-align: top;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  background: rgb(20,20,20);
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(rgba(252, 165, 241,.5),rgba(181, 255, 255,.5));
+  border-radius: 3px;
+}
+::-webkit-resizer,
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-corner {display:none}
+
+.wide-bg {
+  position: absolute;
+  font-size: 0;
+  background: white url("../images/3px-tile.png") repeat;
+  width: 100%;
+  height: 200px;
+}
+
+.bg-top {
+  left: 0;
+}
+
+.bg-bottom {
+  right: 0;
+  bottom: 46px;
+}
+
+.grade {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.grade-down {
+  background: linear-gradient(rgba(255, 255, 255, 0.4),rgba(255,255,255,1));
+}
+
+.grade-right {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.4),rgba(255,255,255,1));
+}
+
+.grade-up {
+  background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.4));
+}
+
+.grade-left {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.4),rgba(255,255,255,1));
+}

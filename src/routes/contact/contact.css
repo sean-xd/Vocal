@@ -1,0 +1,46 @@
+.contact-page header {
+  height: 0px;
+}
+
+.contact-page .head-title {
+  opacity: 0;
+  transform: translate3d(0,-250px,0);
+}
+
+.contact-page .contact-link {
+  color: rgba(255,255,255,1);
+  border-bottom: 4px solid white;
+  padding: 10px 5px 6px 5px;
+}
+
+#contact {
+  display: inline-block;
+  height: 100%;
+  max-width: 900px;
+  padding: 20px 0 60px 0;
+  text-align: left;
+  width: 80%;
+}
+
+.contact-title {
+  font: 40px "Lato";
+  padding: 15px;
+  text-align: center;
+}
+
+#contact input, .contact-message {
+  box-sizing: border-box;
+  display: inline-block;
+  font: 16px "Segoe UI";
+  padding: 10px;
+  width: 50%;
+}
+
+.contact-message {
+  height: 90px;
+  width: 100%;
+}
+
+#contact button {
+  padding: 5px 10px;
+}
