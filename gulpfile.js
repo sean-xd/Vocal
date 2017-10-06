@@ -28,7 +28,7 @@ gulp.task("html", () => {
 gulp.task("prod-html", () => {
   return gulp.src(src.html)
     .pipe(htmlhint())
-    .pipe(replace("localhost:3000", "executiverisk.xyz"))
+    .pipe(replace("localhost:3000", "www.executiverisk.xyz"))
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("dist/"));
 });
