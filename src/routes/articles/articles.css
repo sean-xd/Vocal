@@ -1,12 +1,3 @@
-.articles-page header {
-  height: 0px;
-}
-
-.articles-page .head-title {
-  opacity: 0;
-  transform: translate3d(0,-250px,0);
-}
-
 .articles-page footer {
   position: absolute;
 }
@@ -104,6 +95,10 @@ article:nth-child(odd) .article-authors img {
   padding: 5px 5px 15px 5px;
 }
 
+.article-tags {
+  position: relative;
+}
+
 .article-tag, .article-authors img  {cursor: pointer;}
 
 .article-tag {
@@ -122,13 +117,23 @@ article:nth-child(odd) .article-authors img {
   color: rgb(20,20,20,1);
 }
 
+.article-readmore {
+  color: rgb(45, 75, 175);
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  font: 16px "Didact Gothic";
+}
+
 .disclaimer {
+  box-sizing: border-box;
   padding-left: 94px;
   text-align: left;
   font: 14px "Raleway";
   width: 80%;
   margin: 0px auto 86px auto;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .disc-text, .disclaimer a {

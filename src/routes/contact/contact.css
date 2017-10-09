@@ -1,16 +1,6 @@
-.contact-page header {
-  height: 0px;
-}
-
-.contact-page .head-title {
-  opacity: 0;
-  transform: translate3d(0,-250px,0);
-}
-
 .contact-page .contact-link {
-  color: rgba(255,255,255,1);
-  border-bottom: 4px solid white;
-  padding: 10px 5px 6px 5px;
+  background: rgb(245,245,245);
+  color: rgb(20,20,20);
 }
 
 #contact {

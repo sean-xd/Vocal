@@ -37,7 +37,7 @@ var articles = [
       title: "D&O Liability Exposure and Insurance Trends and How to Manage Them",
       route: "do-liability-exposure-and-insurance-trends",
       authors: ["Fred T. Podolsky"],
-      blurb: "D&O exposures come from claims “fads” like IPO Laddering or credit crisis claims or disclosure only settlements driven by the plaintiff’s bar, but these fads are usually short lived. Some liability trends, however, such as securities class actions and whistleblower claims, appear to be a continuing and growing source of liability and with no end in sight. In an article published in the John Liner Letter, which can be accessed here we touch on some of the more significant or the more recent of these issues.",
+      blurb: "D&O exposures come from claims “fads” like IPO Laddering or credit crisis claims or disclosure only settlements driven by the plaintiff’s bar, but these fads are usually short lived. Some liability trends, however, such as securities class actions and whistleblower claims, appear to be a continuing and growing source of liability and with no end in sight.",
       text: [
         "D&O exposures come from claims “fads” like IPO Laddering or credit crisis claims or disclosure only settlements driven by the plaintiff’s bar, but these fads are usually short lived. Some liability trends, however, such as securities class actions and whistleblower claims, appear to be a continuing and growing source of liability and with no end in sight.  Below is a sampling of current D&O liability triggers:",
         t("strong")("Shareholder Merger Objection Claims"),

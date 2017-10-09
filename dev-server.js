@@ -7,4 +7,4 @@ app.use("/products", express.static(__dirname + "/dist"));
 app.use("/contact", express.static(__dirname + "/dist"));
 app.use("/articles/:title", express.static(__dirname + "/dist"));
 
-app.listen(80);
+app.listen(3000);

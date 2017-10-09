@@ -1,25 +1,10 @@
-/* RESET */
-html, body {
-  min-height: 100vh;
-  width: 100%;
-}
-
-body {
-  height: 100%;
-  margin: 0;
-  position: relative;
-}
-
 /* CLASSES */
-.fill {
-  height: 100%;
-  width: 100%;
-}
+.fill {position: absolute; height: 100%; width: 100%;}
 
 /* HEADER */
 header {
   background: white url("../images/skyline2.jpg") center/cover;
-  height: 270px;
+  height: 200px;
   position: relative;
   text-align: center;
   transition: .2s all;
@@ -31,23 +16,16 @@ header {
   color: white;
   font: 500 70px "Montserrat";
   padding: 20px;
-  top: 200px;
+  top: 110px;
   left: calc(50% - 424px);
   position: absolute;
+  text-decoration: none;
   text-shadow: 1px 1px black, 1px -1px black, -1px 1px black, -1px -1px black;
   transition: .2s all;
-  pointer-events: none;
   opacity: 0;
 }
-
-.font-loaded .head-title {
-  opacity: 1;
-  transform: translate3d(0, -40px, 0);
-}
-
-.grade-2 {
-  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(40,40,40,1));
-}
+.font-loaded .head-title {opacity: 1;transform: translate3d(0, -30px, 0);}
+.head-grade {background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(40,40,40,1));}
 
 /* NAVIGATION */
 nav {
@@ -65,20 +43,13 @@ nav a {
   color: white;
   display: inline-block;
   font: 20px "Segoe UI";
-  padding: 10px 5px;
-  margin: 2px 10px 0px 10px;
+  padding: 12px 15px 10px 15px;
   text-decoration: none;
-  text-shadow: 1px 1px rgba(20,20,20,.6), 1px -1px rgba(20,20,20,.6), -1px 1px rgba(20,20,20,.6), -1px -1px rgba(20,20,20,.6);
   transition: .2s all;
 }
 
 nav a:hover {
-  border-bottom: 4px solid rgba(255,255,255,.8);
-  padding: 10px 5px 6px 5px;
-}
-
-nav a:last-child {
-  margin-right: 20px;
+  background: rgb(60,60,60);
 }
 
 /* MAIN */
@@ -106,48 +77,17 @@ footer {
   vertical-align: top;
 }
 
-::-webkit-scrollbar{
-  width: 10px;
-  background: rgb(20,20,20);
-}
-::-webkit-scrollbar-thumb{
-  background: linear-gradient(rgba(252, 165, 241,.5),rgba(181, 255, 255,.5));
-  border-radius: 3px;
-}
-::-webkit-resizer,
-::-webkit-scrollbar-button,
-::-webkit-scrollbar-corner {display:none}
-
+/* BACKGROUND TEXTURE GRADIENTS*/
 .wide-bg {
   position: absolute;
   font-size: 0;
-  background: white url("../images/3px-tile.png") repeat;
   width: 100%;
-  height: 300px;
+  height: calc(50vh - 181.5px);
 }
-
-.bg-bottom {
-  bottom: 46px;
-}
-
-.grade {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-.grade-down {
-  background: linear-gradient(rgba(255, 255, 255, 0.4),rgba(255,255,255,1));
-}
-
-.grade-right {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.4),rgba(255,255,255,1));
-}
-
-.grade-up {
-  background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.4));
-}
-
-.grade-left {
-  background: linear-gradient(to left, rgba(255, 255, 255, 0.4),rgba(255,255,255,1));
-}
+.tile {opacity: 1;background: white url("../images/3px-tile.png") repeat;}
+.cubes {opacity: .75; background: white url("../images/cubes.png") repeat;}
+.bg-bottom {bottom: 46px;}
+.grade-down {background: linear-gradient(rgba(255, 255, 255, 0),rgba(255,255,255,1));}
+.grade-right {background: linear-gradient(to right, rgba(255, 255, 255, 0),rgba(255,255,255,1));}
+.grade-up {background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0));}
+.grade-left {background: linear-gradient(to left, rgba(255, 255, 255, 0),rgba(255,255,255,1));}

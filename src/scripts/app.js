@@ -18,9 +18,7 @@ function router(e){
 
 window.addEventListener("popstate", e => router());
 
-setTimeout(() => {
-  document.body.classList.add("font-loaded");
-}, 300);
+setTimeout(() => document.body.classList.add("font-loaded"), 300);
 
 function isArticle(str){
   return str.indexOf("article") > -1;

@@ -7,7 +7,7 @@ articles.forEach(obj => {
         ]),
         t(".article-text")([
           t(".article-date")(obj.date),
-          t(".article-title")(obj.title),
+          t("a", {className: "article-title", href:"/", onclick: router})(obj.title),
           t(".article-paras")(obj.text.map(para => t(".article-para")(para))),
           t(".article-tags")(obj.tags.map(tag => t(".article-tag")(tag)))
         ])
