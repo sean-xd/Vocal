@@ -1,0 +1,50 @@
+.inquiry-page .inquiry-link {
+  background: rgb(245,245,245);
+  color: rgb(20,20,20);
+}
+.inquiry-page footer {position: absolute;}
+
+#inquiry {
+  display: inline-block;
+  font-size: 0;
+  max-width: 700px;
+  padding: 10px 0 100px 0;
+  text-align: left;
+  width: 80%;
+}
+
+.inquiry-form {
+  background-color: rgb(250,250,250);
+  background-image: url("images/ag-square.png");
+  border: 1px solid rgb(200,200,200);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.5);
+  padding: 20px;
+}
+
+.inquiry-title {
+  font: 40px "Lato";
+  padding: 20px;
+  text-align: center;
+}
+
+#inquiry input, #inquiry label, .inquiry-message {
+  box-sizing: border-box;
+  display: inline-block;
+  font: 16px "Segoe UI";
+  width: 100%;
+}
+
+#inquiry label {padding: 10px 0px;}
+#inquiry input {padding: 5px;}
+
+.inquiry-message {
+  height: 90px;
+  padding: 10px;
+}
+
+#inquiry button {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  padding: 15px;
+  width: 100%;
+}

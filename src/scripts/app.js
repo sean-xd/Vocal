@@ -1,7 +1,5 @@
 router();
 
-console.log("test");
-
 function router(e){
   if(e) e.preventDefault();
   var route = e ? e.target.getAttribute("href") : document.location.pathname;
