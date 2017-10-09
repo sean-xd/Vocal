@@ -1,8 +1,9 @@
 var express = require("express"), app = express();
 
 app.use(function (req, res, next) {
+  console.log(req.hostname);
   if(req.hostname === "executiverisk.xyz") next();
-  else res.send("Hello, you are accessing this site from an illegitamate url. Whatever site you are coming from is a scam.");
+  else res.end("Hello, you are accessing this site from an illegitimate url. Whatever site you expected is linking to my site improperly.");
 });
 
 app.use(express.static(__dirname + "/dist"));
