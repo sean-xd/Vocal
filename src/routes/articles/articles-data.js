@@ -18,7 +18,11 @@ var articles = [
       title: "Emerging technologies provide new opportunities to do business but also open the door to new risk exposures",
       route: "emerging-technologies-new-opportunities-and-risk-exposures",
       authors: ["Cara Murray"],
-      blurb: "New Opportunities that result from  technological advances also come with new risks. Modern business is conducted in a highly networked, data-rich environment. Dynamic and developing technologies are currently and continually being leveraged for increased operational capabilities. This opportunity and innovation does not come without challenges. In any business endeavor, the other side of opportunity is risk, and this is no less true of running a business with technological enhancements. A bigger cyber presence means more cyber exposure.  The first article in our series about Cyber, Privacy and Social Media can be accessed here.  In this article we focus on Cyber Realities: Where We are Now.",
+      blurb: [
+        t("span")("New Opportunities that result from  technological advances also come with new risks. Modern business is conducted in a highly networked, data-rich environment. Dynamic and developing technologies are currently and continually being leveraged for increased operational capabilities. This opportunity and innovation does not come without challenges. In any business endeavor, the other side of opportunity is risk, and this is no less true of running a business with technological enhancements. A bigger cyber presence means more cyber exposure.  The first article in our series about Cyber, Privacy and Social Media can be accessed "),
+        t("a", {href: "http://www.alliant.com/Risk-Solutions/Documents/Cyber_Realities_No_1.pdf"})("here"),
+        t("span")(".  In this article we focus on Cyber Realities: Where We are Now.")
+      ],
       text: [
         "New Opportunities that result from  technological advances also come with new risks. Modern business is conducted in a highly networked, data-rich environment. Dynamic and developing technologies are currently and continually being leveraged for increased operational capabilities. This opportunity and innovation does not come without challenges. In any business endeavor, the other side of opportunity is risk, and this is no less true of running a business with technological enhancements. A bigger cyber presence means more cyber exposure.",
         "Current trends in business technology that allow for innovation but also open the door to increased risk include:",
