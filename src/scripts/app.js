@@ -15,6 +15,8 @@ else {
   document.body.appendChild(third);
 }
 
+console.log("come on");
+
 function router(e){
   if(e) e.preventDefault();
   var route = e ? e.target.getAttribute("href") : document.location.pathname;
