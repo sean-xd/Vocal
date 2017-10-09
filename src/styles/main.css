@@ -82,6 +82,16 @@ footer {
   vertical-align: top;
 }
 
+.admin {
+  font: 14px "Raleway";
+  padding: 16px 10px 10px 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgb(200,200,200);
+  cursor: pointer;
+}
+
 /* BACKGROUND TEXTURE GRADIENTS*/
 .wide-bg {
   position: absolute;

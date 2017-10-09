@@ -1,0 +1,18 @@
+#admin {
+  padding-top: 20px;
+}
+
+.admin-title {
+  font: 40px Lato;
+  padding: 25px;
+}
+
+#admin input, #admin button {
+  box-sizing: border-box;
+  display: block;
+  margin: auto;
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  font: 16px "Segoe UI";
+}
