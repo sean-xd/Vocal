@@ -1,21 +1,4 @@
-if(window.location.host === "executiverisk.xyz") router();
-else if(window.location.host === "localhost:3000") router();
-else {
-  while(document.head.firstChild) document.head.removeChild(document.head.firstChild);
-  while(document.body.firstChild) document.body.removeChild(document.body.firstChild);
-  var first = document.createElement("div"),
-    second = document.createElement("div"),
-    third = document.createElement("a");
-  first.textContent = `Hello, this server is being illegitimately routed to by ${window.location.hostname}.`;
-  second.textContent = "Please visit the correct domain at:";
-  third.href = "http://executiverisk.xyz";
-  third.textContent = "http://executiverisk.xyz";
-  document.body.appendChild(first);
-  document.body.appendChild(second);
-  document.body.appendChild(third);
-}
-
-console.log("come on");
+router();
 
 function router(e){
   if(e) e.preventDefault();
