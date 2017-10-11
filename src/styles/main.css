@@ -1,108 +1,44 @@
-/* CLASSES */
-.fill {position: absolute; height: 100%; width: 100%;}
-
-/* HEADER */
-header {
-  background: white url("../images/skyline2.jpg") center/cover;
-  height: 200px;
-  position: relative;
+.content {
+  width: 90%;
+  margin: auto;
+  max-width: 1300px;
   text-align: center;
-  transition: .2s all;
-  width: 100%;
 }
 
-.head-title {
+main, aside {
+  box-sizing: border-box;
   display: inline-block;
-  color: white;
-  font: 500 70px "Montserrat";
-  top: 125px;
-  left: calc(50% - 410px);
-  position: absolute;
-  text-decoration: none;
-  text-shadow: 1px 1px black, 1px -1px black, -1px 1px black, -1px -1px black;
-  transition: .2s all;
-  opacity: 0;
-}
-.head-title em {pointer-events: none;}
-.font-loaded .head-title {opacity: 1;transform: translate3d(0, -30px, 0);}
-.head-grade {background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(40,40,40,1));}
-
-/* NAVIGATION */
-nav {
-  font-size: 0;
   position: relative;
-  text-align: center;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  background: rgb(40, 40, 40);
-}
-
-nav a {
-  border-right: 1px solid rgb(100,100,100);
-  border-top: 1px solid rgb(100,100,100);
-  color: white;
-  display: inline-block;
-  font: 20px "Segoe UI";
-  padding: 10px 20px;
-  text-decoration: none;
-  transition: .2s all;
-}
-
-nav a:first-child {
-  border-left: 1px solid rgb(100,100,100);
-}
-
-nav a:hover {
-  background: rgb(60,60,60);
-}
-
-/* MAIN */
-main {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-}
-
-/* FOOTER */
-footer {
-  background: rgb(20,20,20);
-  bottom: 0;
-  height: 46px;
-  position: fixed;
-  text-align: center;
-  width: 100%;
-}
-
-.foot-note {
-  color: rgb(200,200,200);
-  display: inline-block;
-  font: 14px "Raleway";
-  padding: 16px 10px 10px 10px;
   vertical-align: top;
 }
 
-.admin {
-  font: 14px "Raleway";
-  padding: 16px 10px 10px 10px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: rgb(200,200,200);
-  cursor: pointer;
+main {
+  padding: 0px 20px;
+  text-align: center;
+  width: 75%;
 }
 
-/* BACKGROUND TEXTURE GRADIENTS*/
-.wide-bg {
-  position: absolute;
-  font-size: 0;
-  width: 100%;
-  height: calc(50vh - 181.5px);
+aside {
+  text-align: left;
+  width: 25%;
 }
-.tile {opacity: 1;background: white url("../images/3px-tile.png") repeat;}
-.cubes {opacity: .75; background: white url("../images/cubes.png") repeat;}
-.bg-bottom {bottom: 46px;}
-.grade-down {background: linear-gradient(rgba(255, 255, 255, 0),rgba(255,255,255,1));}
-.grade-right {background: linear-gradient(to right, rgba(255, 255, 255, 0),rgba(255,255,255,1));}
-.grade-up {background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0));}
-.grade-left {background: linear-gradient(to left, rgba(255, 255, 255, 0),rgba(255,255,255,1));}
+
+.page {
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 800px;
+  min-height: calc(100vh - 288px);
+  position: relative;
+  text-align: left;
+}
+
+#home, #article {
+  max-width: 1000px;
+}
+
+h1 {
+  font: 36px "Lato";
+  margin: 0;
+  padding: 40px 0px 20px 0px;
+  text-align: center;
+}

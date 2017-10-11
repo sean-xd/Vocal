@@ -1,0 +1,24 @@
+footer {
+  background: rgb(40,40,40);
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.foot-note {
+  color: rgb(200,200,200);
+  display: inline-block;
+  font: 14px "Raleway";
+  padding: 14px;
+  vertical-align: top;
+}
+
+.admin {
+  color: rgb(200,200,200);
+  cursor: pointer;
+  font: 14px "Raleway";
+  padding: 14px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

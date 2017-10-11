@@ -1,5 +1,5 @@
 routes["/"] = {
-  dom: t("#home")(articles.map(obj => t("article")([  
+  dom: t("#home", {className: "page"})(articles.map(obj => t("article")([  
     t(".article-authors")([
       t("img", {src: contributors.filter(e => e.name === obj.authors[0])[0].image})()
     ]),

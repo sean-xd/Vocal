@@ -1,6 +1,6 @@
 articles.forEach(obj => {
   routes[`/articles/${obj.route}/`] = {
-    dom: t("#article")([
+    dom: t("#article", {className: "page"})([
       t("article")([
         t(".article-authors")([
           t("img", {src: contributors.filter(e => e.name === obj.authors[0])[0].image})()

@@ -1,6 +1,6 @@
 routes["/contributors/"] = {
-  dom: t("#contributors")([
-      t(".contributors-title")("Our Contributors")
+  dom: t("#contributors", {className: "page"})([
+      t("h1")("Our Contributors")
     ].concat(contributors.map((obj, i) => t("div", {className: `member member-${i + 1}`, onclick: openMember})([
       t("img", {className: "member-image", src: obj.image})(),
       t(".member-info")([

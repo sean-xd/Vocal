@@ -1,6 +1,6 @@
 routes["/inquiry/"] = {
-  dom: t("#inquiry")([
-    t(".inquiry-title")("For Business Inquiries"),
+  dom: t("#inquiry", {className: "page"})([
+    t("h1")("For Business Inquiries"),
     t(".inquiry-form")([
       t("label")("Name *"),
       t("input", {className: "inquiry-name", type: "text", required: true})(),

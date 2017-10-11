@@ -1,6 +1,6 @@
 routes["/products/"] = {
-  dom: t("#products")([
-    t(".products-title")("Products and Services"),
+  dom: t("#products", {className: "page"})([
+    t("h1")("Products and Services"),
     t(".opener")("The Executive Risk Group of Alliant Insurance Services is a full service, product driven specialty group that delivers industry leading liability and insurance expertise combined with powerful market leverage. The result is the best possible coverage for our clients at the best possible price."),
     t(".list-title")("OUR TEAM APPROACH"),
     t("ul")([

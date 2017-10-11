@@ -1,0 +1,38 @@
+aside {
+  border-left: 1px dotted rgb(40,40,40);
+  font-size: 0;
+  padding: 20px;
+}
+
+aside img {
+  background: rgb(40,40,40);
+  width: 100%;
+}
+
+aside input, aside button {
+  box-sizing: border-box;
+  font: 14px "Raleway";
+}
+
+aside button, aside input {
+  padding: 10px;
+}
+
+aside input {
+  margin: 20px 0px;
+  width: calc(100% - 60px);
+}
+
+aside button {
+  width: 60px;
+}
+
+aside div, aside a {
+  display: block;
+  font: 14px "Segoe UI";
+  padding: 5px 0px;
+}
+
+aside a {
+  border-bottom: 1px dotted rgb(40,40,40);
+}

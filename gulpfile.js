@@ -3,6 +3,7 @@ var gulp = require("gulp"),
   babel = require("gulp-babel"),
   cleanCSS = require("gulp-clean-css"),
   concat = require("gulp-concat"),
+  fileinclude = require("gulp-file-include"),
   htmlhint = require("gulp-htmlhint"),
   htmlmin = require("gulp-htmlmin"),
   jshint = require("gulp-jshint"),
@@ -12,6 +13,7 @@ var gulp = require("gulp"),
   replace = require("gulp-replace"),
   src = {
     html: "src/index.html",
+    htmlWatch: ["src/index.html", "src/partials/*.html"],
     css: ["src/styles/*.css", "src/routes/**/*.css"],
     js: ["src/scripts/util.js", "src/scripts/globals.js",
     "src/routes/**/*-data.js", "src/routes/**/*-route.js",
@@ -20,6 +22,7 @@ var gulp = require("gulp"),
 
 gulp.task("html", () => {
   return gulp.src(src.html)
+    .pipe(fileinclude({basepath: "./src/partials/"}))
     .pipe(htmlhint())
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("dist/"));
@@ -27,6 +30,7 @@ gulp.task("html", () => {
 
 gulp.task("prod-html", () => {
   return gulp.src(src.html)
+    .pipe(fileinclude({basepath: "/partials/"}))
     .pipe(htmlhint())
     .pipe(replace("localhost:3000", "executiverisk.xyz"))
     .pipe(htmlmin({collapseWhitespace: true}))
@@ -58,7 +62,7 @@ gulp.task("default", ["html", "js", "css"]);
 gulp.task("prod", ["prod-html", "js", "css"]);
 
 gulp.task("dev", ["default"], () => {
-  gulp.watch(src.html, ["html"]);
+  gulp.watch(src.htmlWatch, ["html"]);
   gulp.watch(src.js, ["js"]);
   gulp.watch(src.css, ["css"]);
 });

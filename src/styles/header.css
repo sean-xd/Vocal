@@ -1,0 +1,70 @@
+header {
+  background: rgb(40,40,40) url("../images/skyline2.jpg") center/cover;
+  height: 200px;
+  position: relative;
+  text-align: center;
+}
+
+.head-grade {
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(40,40,40,1));
+  height: 100%;
+}
+
+.head-grade a {
+  font: 500 70px "Montserrat";
+  margin-top: 105px;
+  opacity: 0;
+  text-shadow: 1px 1px black, 1px -1px black, -1px 1px black, -1px -1px black;
+}
+
+.head-grade em {
+  pointer-events: none;
+}
+
+.font-loaded .head-grade a {
+  opacity: 1;
+}
+
+.head-grade a, nav a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav {
+  font-size: 0;
+  text-align: center;
+  background: rgb(40, 40, 40);
+}
+
+nav a {
+  border-right: 1px solid rgb(100,100,100);
+  border-top: 1px solid rgb(100,100,100);
+  font: 20px "Segoe UI";
+  padding: 8px 20px;
+  transition: .2s all;
+}
+
+nav a:first-child {
+  border-left: 1px solid rgb(100,100,100);
+}
+
+nav a:hover {
+  background: rgb(60,60,60);
+}
+
+.contributors-page .contributors-link,
+.home-page .home-link,
+.inquiry-page .inquiry-link,
+.products-page .products-link {
+  background: rgb(245,245,245);
+  color: rgb(20,20,20);
+}
+
+@media (max-width: 880px) {
+  .head-title {font-size: 50px;}
+}
+
+@media (max-width: 640px) {
+  .head-title {font-size: 35px;}
+}

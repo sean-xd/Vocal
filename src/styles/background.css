@@ -1,0 +1,27 @@
+.tile, .cubes {
+  font-size: 0;
+  height: calc(50vh - 144px);
+  position: absolute;
+  width: 100%;
+}
+
+.tile {
+  background: white url("../images/3px-tile.png") repeat;
+}
+
+.cubes {
+  background: white url("../images/cubes.png") repeat;
+  opacity: .75;
+}
+
+.tile div, .cubes div {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.bg-bottom {bottom: 0px;}
+.grade-down {background: linear-gradient(rgba(255, 255, 255, 0),rgba(255,255,255,1));}
+.grade-right {background: linear-gradient(to right, rgba(255, 255, 255, 0),rgba(255,255,255,1));}
+.grade-up {background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0));}
+.grade-left {background: linear-gradient(to left, rgba(255, 255, 255, 0),rgba(255,255,255,1));}

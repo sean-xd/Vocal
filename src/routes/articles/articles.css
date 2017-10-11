@@ -1,12 +1,8 @@
-.articles-page footer {
-  position: absolute;
-}
-
 article {
   font-size: 0;
   max-width: 900px;
   position: relative;
-  width: 80%;
+  width: 90%;
   margin: auto;
   text-align: left;
   padding: 40px 0px;

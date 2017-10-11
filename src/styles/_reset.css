@@ -1,0 +1,21 @@
+/* RESET */
+html {
+  height: 100%;
+}
+html, body {
+  min-height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  position: relative;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  background: rgb(40,40,40);
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgba(252, 165, 241,.5),rgba(181, 255, 255,.5));
+}

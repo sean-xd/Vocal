@@ -1,26 +1,3 @@
-.contributors-page .contributors-link {
-  background: rgb(245,245,245);
-  color: rgb(20,20,20);
-}
-
-.contributors-page footer {
-  position: absolute;
-}
-
-#contributors {
-  display: inline-block;
-  max-width: 900px;
-  padding: 0px 0 100px 0;
-  position: relative;
-  width: 90%;
-}
-
-.contributors-title {
-  font: 40px "Lato";
-  padding: 26px;
-  text-align: center;
-}
-
 .member {
   background: white;
   border-radius: 5px;
@@ -88,13 +65,13 @@
 /* Second Column */
 .member-2, .member-4, .member-6, .member-8 {left: 51%;}
 /* First Row */
-.member-1, .member-2 {top: 100px;}
+.member-1, .member-2 {top: 110px;}
 /* Second Row */
-.member-3, .member-4 {top: 215px;}
+.member-3, .member-4 {top: 225px;}
 /* Third Row */
-.member-5, .member-6 {top: 330px;}
+.member-5, .member-6 {top: 340px;}
 /* Fourth Row */
-.member-7, .member-8 {top: 445px;}
+.member-7, .member-8 {top: 455px;}
 
 .member-1, .member-4, .member-5, .member-8 {
   border: 1px solid rgba(252, 165, 241,.5);
@@ -110,8 +87,8 @@
 }
 
 .member-open {
-  top: 100px;
   left: 0;
+  top: 110px;
   width: 100%;
 }
 
@@ -137,25 +114,24 @@
   width: 100px;
 }
 
-.member-contact {
+.member-contact, .member-bio {
   font: 16px "Segoe UI";
   position: absolute;
-  right: 20px;
-  top: 8px;
   opacity: 0;
-  text-align: right;
   transition: .2s all;
 }
 
+.member-contact {
+  right: 20px;
+  top: 8px;
+  text-align: right;
+}
+
 .member-bio {
-  font: 16px "Segoe UI";
-  position: absolute;
   left: 0px;
   top: 100px;
-  opacity: 0;
   height: 0px;
   padding: 0px 16px;
-  transition: .2s all;
   overflow: hidden;
 }
 

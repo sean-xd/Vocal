@@ -1,7 +1,7 @@
 var express = require("express"), app = express();
 
 app.use(function (req, res, next) {
-  console.log(req.hostname);
+  console.log(req.hostname, new Date());
   if(req.hostname === "executiverisk.xyz") next();
   else if(req.hostname === "www.executiverisk.xyz") next();
   else res.end("Hello, you are accessing this site from an illegitimate url. Whatever site you expected is linking to my site improperly.");
