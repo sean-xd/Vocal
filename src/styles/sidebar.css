@@ -12,9 +12,6 @@ aside img {
 aside input, aside button {
   box-sizing: border-box;
   font: 14px "Raleway";
-}
-
-aside button, aside input {
   padding: 10px;
 }
 
@@ -27,12 +24,20 @@ aside button {
   width: 60px;
 }
 
-aside div, aside a {
-  display: block;
-  font: 14px "Segoe UI";
+aside div {
+  font: 14px "Didact Gothic";
   padding: 5px 0px;
 }
 
 aside a {
   border-bottom: 1px dotted rgb(40,40,40);
+  cursor: pointer;
+  display: block;
+  font: 14px "Didact Gothic";
+  padding: 5px;
+  transition: .2s all;
+}
+
+aside a:hover {
+  background: rgb(240,240,240);
 }
