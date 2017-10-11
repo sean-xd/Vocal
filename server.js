@@ -1,10 +1,15 @@
-var express = require("express"), app = express();
+var express = require("express"),
+  app = express(),
+  badTraffic = 0;
 
 app.use(function (req, res, next) {
-  console.log(req.hostname, new Date());
   if(req.hostname === "executiverisk.xyz") next();
   else if(req.hostname === "www.executiverisk.xyz") next();
-  else res.end("Hello, you are accessing this site from an illegitimate url. Whatever site you expected is linking to my site improperly.");
+  else {
+    console.log(req.hostname, new Date(), ++badTraffic);
+    // res.redirect(301, "https://twitch.tv/sailorsalty");
+    res.end("<html><body><alert>Hello, you are accessing this site from an illegitimate url. Whatever site you expected is linking to my site improperly.</alert></body></html>");
+  }
 });
 
 app.use(express.static(__dirname + "/dist"));

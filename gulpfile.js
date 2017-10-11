@@ -30,7 +30,7 @@ gulp.task("html", () => {
 
 gulp.task("prod-html", () => {
   return gulp.src(src.html)
-    .pipe(fileinclude({basepath: "/partials/"}))
+    .pipe(fileinclude({basepath: "./src/partials/"}))
     .pipe(htmlhint())
     .pipe(replace("localhost:3000", "executiverisk.xyz"))
     .pipe(htmlmin({collapseWhitespace: true}))
