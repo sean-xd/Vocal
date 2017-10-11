@@ -6,12 +6,12 @@ routes["/contributors/"] = {
       t(".member-info")([
         t(".member-name")(obj.name),
         t(".member-title")(obj.title),
-        t(".member-position")(obj.position),
-        t(".member-location")(obj.location)
-      ]),
-      t(".member-contact")([
         t(".member-email")(obj.email),
         t(".member-phone")(obj.phone)
+      ]),
+      t(".member-contact")([
+        t(".member-position")(obj.position),
+        t(".member-location")(obj.location)
       ]),
       t(".member-bio")(obj.bio.map(para => t("p")(para)))
     ])))

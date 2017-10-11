@@ -49,9 +49,9 @@
 
 .member-info {
   font: 16px "Segoe UI";
+  left: 115px;
   position: absolute;
-  left: 105px;
-  top: 29px;
+  top: 8px;
   transition: .2s all;
 }
 
@@ -99,11 +99,6 @@
 
 .member-open .member-position, .member-open .member-location, .member-open .member-contact {
   opacity: 1;
-}
-
-.member-open .member-info {
-  top: 8px;
-  left: 115px;
 }
 
 .member-open .member-image {
