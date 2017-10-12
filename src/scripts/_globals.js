@@ -1,3 +1,9 @@
+var dom = {
+    main: el("main")[0]
+  },
+  routes = {},
+  currentRoute;
+  
 function el(id, parent){
   if(!parent) parent = document;
   if(id[0] === "#") return parent.getElementById(id.substr(1));

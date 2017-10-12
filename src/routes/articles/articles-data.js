@@ -70,6 +70,6 @@ var articles = [
         "Customize coverage for your industry – does this cover your larger industry exposures",
         "Cover your back – make sure that the insurance you end up with covers your exposures"
       ],
-      tags: ["E&O", "Professional liability"]
+      tags: ["E&O", "Professional Liability"]
     }
 ].sort((a, b) => b.id - a.id);

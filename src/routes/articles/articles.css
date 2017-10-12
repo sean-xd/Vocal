@@ -1,3 +1,7 @@
+#article {
+  max-width: 1000px;
+}
+
 article {
   font-size: 0;
   max-width: 900px;
@@ -105,6 +109,7 @@ article:nth-child(odd) .article-authors img {
   padding: 5px 10px;
   font: 16px "Didact Gothic";
   margin: 5px;
+  text-decoration: none;
   transition: .2s all;
 }
 

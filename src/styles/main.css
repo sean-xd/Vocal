@@ -32,10 +32,6 @@ aside {
   text-align: left;
 }
 
-#home, #article {
-  max-width: 1000px;
-}
-
 h1 {
   font: 36px "Lato";
   margin: 0;

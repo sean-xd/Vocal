@@ -14,10 +14,8 @@ var gulp = require("gulp"),
   src = {
     html: "src/index.html",
     htmlWatch: ["src/index.html", "src/partials/*.html"],
-    css: ["src/styles/*.css", "src/routes/**/*.css"],
-    js: ["src/scripts/util.js", "src/scripts/globals.js",
-    "src/routes/**/*-data.js", "src/routes/**/*-route.js",
-    "src/scripts/app.js"]
+    css: ["src/styles/*.css", "src/**/**/*.css"],
+    js: ["src/scripts/_globals.js", "src/routes/**/*-data.js", "src/routes/**/*-route.js", "src/scripts/app.js"]
   };
 
 gulp.task("html", () => {
