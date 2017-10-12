@@ -13,7 +13,7 @@ var gulp = require("gulp"),
   replace = require("gulp-replace"),
   src = {
     html: "src/index.html",
-    htmlWatch: ["src/index.html", "src/partials/*.html"],
+    htmlWatch: ["src/index.html", "src/partials/**/*.html"],
     css: ["src/styles/*.css", "src/**/**/*.css"],
     js: ["src/scripts/_globals.js", "src/routes/**/*-data.js", "src/routes/**/*-route.js", "src/scripts/app.js"]
   };

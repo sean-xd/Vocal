@@ -5,3 +5,8 @@
 #tag h1 {
   margin-bottom: -40px;
 }
+
+.no-match {
+  font: 20px "Raleway";
+  padding: 60px;
+}
